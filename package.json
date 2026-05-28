@@ -1,0 +1,16 @@
+{
+  "name": "domain-expansion",
+  "version": "1.0.0",
+  "description": "A local webcam gesture app. The Python 3.12 FastAPI backend reads hand landmarks with OpenCV and the MediaPipe Tasks HandLandmarker, then sends detected domain events to a vanilla TypeScript Vite frontend over WebSocket.",
+  "main": "index.js",
+  "scripts": {
+    "test": "concurrently \"cd backend && venv\\Scripts\\activate && uvicorn main:app --reload\" \"cd frontend && npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
